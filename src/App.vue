@@ -1,5 +1,18 @@
 <template>
   <div id="app">
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link to="/About">About</router-link>
+        </li>
+        <li>
+          <router-link to="/Services">Services</router-link>
+        </li>
+      </ul>
+    </nav>
     <router-view />
   </div>
 </template>
@@ -19,5 +32,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
 }
 </style>
